@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Herramientas</title>
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Registro de Herramientas</h1>
+
+      <form action="guardar_herramienta.php" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            name="nombre"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="descripcion">Descripción:</label>
+          <textarea
+            class="form-control"
+            id="descripcion"
+            name="descripcion"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="cantidad">Cantidad:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="cantidad"
+            name="cantidad"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+    </div>
+  </body>
+</html>
